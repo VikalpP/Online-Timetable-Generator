@@ -16,13 +16,13 @@ let basePath = './';
     $httpProvider.defaults.headers.patch = {};
   })
   .run(function($rootScope){
-    // $rootScope.serverUrl = 'http://192.168.43.136:8000/';
     $rootScope.serverUrl = '';
   })
+
+  // code to keep user logged in after page refresh
+
   // .run(['$rootScope', '$location', '$cookieStore', '$http',
   //   function ($rootScope, $location, $cookies, $http) {
-  //     $rootScope.serverUrl = 'http://192.168.137.135:8000/';
-  //     // keep user logged in after page refresh
   //     $rootScope.globals = $cookies.get('globals') || {};
   //     if ($rootScope.globals.currentUser) {
   //       $http.defaults.headers.common['Authorization'] =
